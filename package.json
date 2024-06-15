@@ -1,6 +1,6 @@
 {
-  "name": "s3-safe-key",
-  "version": "0.1.0",
+  "name": "@samocodes/s3-safe-key",
+  "version": "0.0.1",
   "description": "Package that sanitizes s3 object keys",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -10,7 +10,7 @@
     "lint": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Samir <samirdiff@proton.me>",
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
