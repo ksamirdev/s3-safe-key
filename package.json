@@ -1,6 +1,6 @@
 {
   "name": "@samocodes/s3-safe-key",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Package that sanitizes s3 object keys",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,5 +24,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/samocodes/s3-safe-key.git"
-  }
+  },
+  "packageManager": "pnpm@8.15.6"
 }
