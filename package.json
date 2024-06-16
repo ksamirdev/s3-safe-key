@@ -1,6 +1,6 @@
 {
   "name": "@samocodes/s3-safe-key",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Package that sanitizes s3 object keys",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,13 +8,18 @@
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "release": "pnpm run build && changeset publish --public"
+    "release": "pnpm run build && changeset publish --public",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Samir <samirdiff@proton.me>",
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
