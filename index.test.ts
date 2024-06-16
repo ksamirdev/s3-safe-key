@@ -1,4 +1,4 @@
-import {sanitize} from '.'
+import { sanitize } from './dist'
 
 test('sanitize key', () => {
   const key = "/example/key/with unsafe*characters?";

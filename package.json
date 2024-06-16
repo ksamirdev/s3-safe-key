@@ -1,29 +1,70 @@
 {
   "name": "@samocodes/s3-safe-key",
-  "version": "1.0.1",
+  "version": "1.1.0",
+  "private": false,
   "description": "Package that sanitizes s3 object keys",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "import": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup index.ts --format cjs,esm --dts --clean --sourcemap --minify terser",
     "lint": "tsc",
     "release": "pnpm run build && changeset publish --public",
-    "test": "jest"
+    "test": "jest --verbose"
   },
-  "keywords": [],
+  "keywords": [
+    "s3-objects",
+    "s3",
+    "aws-s3",
+    "object-keys",
+    "s3-key-sanitization",
+    "s3-key-validation",
+    "s3-safe-keys",
+    "s3-key-cleaning",
+    "aws-s3-utilities",
+    "s3-object-naming",
+    "s3-key-normalization",
+    "s3-key-management",
+    "s3-safe-filenames",
+    "s3-key-generator",
+    "s3-key-security",
+    "s3-key-transform",
+    "s3-compatibility",
+    "s3-key-standardization",
+    "aws-sdk",
+    "s3-helper",
+    "s3-bucket",
+    "s3-path-sanitizer",
+    "s3-string-sanitization",
+    "cloud-storage",
+    "object-storage",
+    "aws-cloud",
+    "s3-key-formatter"
+  ],
   "author": "Samir <samirdiff@proton.me>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.2",
     "jest": "^29.7.0",
+    "terser": "^5.31.1",
     "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
-  "private": false,
   "files": [
     "dist/**/*"
   ],
@@ -31,7 +72,7 @@
     "type": "git",
     "url": "https://github.com/samocodes/s3-safe-key.git"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@8.0.0",
   "publishConfig": {
     "access": "public"
   }
