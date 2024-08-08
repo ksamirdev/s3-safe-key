@@ -56,4 +56,4 @@ Feel free to fork the repository and submit pull requests. For major changes, pl
 This project is licensed under the MIT License.
 
 This README covers the usage, API documentation and installation guide.
-`https://github.com/samocodes/s3-safe-key.git`
+`https://github.com/ksamirdev/s3-safe-key.git`
